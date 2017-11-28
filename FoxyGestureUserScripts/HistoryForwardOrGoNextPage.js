@@ -3,6 +3,6 @@
     history.forward();
     var linkNext = document.querySelector('link[rel=next]');
     if (linkNext) {
-        location.assign(linkNext.href);
+        setTimeout(() => location.href = linkNext.href, 500);
     }
 })();
